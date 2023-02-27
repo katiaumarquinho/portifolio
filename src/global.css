@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    image-rendering: pixelated;
+}
+
+body {
+    background-color: #06001a;
+    background-image: url('./assets/bg-port-final.gif');
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,30 @@
+article {
+    position: relative;
+    padding: 0;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    background-color: #160b40;
+}
+
+.myphoto {
+    height: 35rem;
+    box-shadow: 2px 2px 2px rgba(4,0,13,1);
+
+    margin-left: 5rem;
+}
+
+.content {
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.content div {
+    font-family: 'Press Start 2P', cursive;
+    width: 100%;
+    height: 30rem;
+
+}

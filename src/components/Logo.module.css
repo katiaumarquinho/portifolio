@@ -1,0 +1,16 @@
+
+.interface {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 23rem auto 25rem auto;
+    width: 100%;
+    height:100%;
+}
+
+.interface > img {
+    height: 12rem;
+    padding-bottom: 2rem;
+}
+
+

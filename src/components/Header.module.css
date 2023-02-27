@@ -1,0 +1,8 @@
+    .head {
+        height: 8rem;
+        background-image: 
+            linear-gradient(rgba(219,41,255,1), rgba(4,0,13,0.3)),
+            url('../assets/background-portifolio.svg');
+        width: 100%;
+    }
+
