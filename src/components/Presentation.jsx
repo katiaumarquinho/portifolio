@@ -11,7 +11,7 @@ export function Presentation () {
                     <img className={styles.myphoto} src={myPhoto} />
                     <div>
                         <h1>Marcos Mesquita</h1>
-                        <p>meu nome é marcos, tenho 22 anos, gosto de jogos, faço pixelart, gosto de makonha</p>
+                        <p>Meu nome é Marcos, tenho 22 anos e sou um cara muito centrado </p>
                     </div>
                 </div>
         </article>
