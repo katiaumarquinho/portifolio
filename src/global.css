@@ -7,6 +7,5 @@
 
 body {
     background-color: #06001a;
-    background-image: url('./assets/bg-port-final.gif');
-    background-repeat: no-repeat;
+    overflow-x: hidden;
 }

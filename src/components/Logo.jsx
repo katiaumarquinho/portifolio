@@ -3,7 +3,7 @@ import logoName from '../assets/name.svg'
 
 export function Logo () {
     return (       
-            <div className={styles.interface}>
+            <div className={styles.name}>
                 <img src={logoName}/>
             </div>
     )
