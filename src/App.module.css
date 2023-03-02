@@ -101,3 +101,9 @@
   z-index: 3;
   left: 0;
 }
+
+@media screen and (max-width: 992px) {
+  .hero {
+    background-position: initial;
+  }
+}

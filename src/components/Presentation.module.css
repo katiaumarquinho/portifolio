@@ -41,6 +41,8 @@ article {
 .containerMyphoto:hover div {
   opacity: 1;
   min-width: 300px;
+  box-shadow: 10px 10px 5px;
+  border-radius: 5px;
 }
 
 .containerMyphoto > div > img {
