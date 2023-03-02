@@ -1,27 +1,79 @@
 article {
     position: relative;
-    padding: 0;
-    height: 40rem;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
     background-color: #160b40;
 }
 
-.myphoto {
-    height: 50px;
-    box-shadow: 2px 2px 2px rgba(4,0,13,1);
-    margin-left: 5rem;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    background-color: #160b40;
 }
 
-.content {
-    display: flex;
-    color: white;
-    align-items: center;
-    gap: 2rem;
+.containerMyphoto {
+    position: relative;
+}
+
+.containerMyphoto > img {
+    width: 30vw;
+    position: relative;
+    min-width: 300px;
+}
+
+.containerMyphoto > div {
+    position: absolute;
+    opacity: 0;
+    top: 0;
     width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    background-color: #06001a;
+    min-width: 300px;
+}
+
+.containerMyphoto:hover div{
+    opacity: 1;
+    min-width:300px;
+}
+
+.containerMyphoto > div > img {
+    width: 100%;
+    height: 100%;
+    min-width: 300px;
 }
 
 .description {
     font-family: 'Chakra Petch', sans-serif;
-    line-height: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: #eacbf2;
+    margin-right: 5rem;
+    margin: 0 5rem;
+}
+
+@media screen and (max-width: 1400px) {
+    .container {
+        gap: 2.5rem;
+    }
+    .containerMyphoto{
+        margin: 2.5rem 0 0 ;
+    }
+    .containerMyphoto > img {
+        width: 300px;
+    }
+    .containerMyphoto > div {
+        width: 300px;
+        height:300px;
+    }
+    .description {
+        margin: 0 0 2.5rem 0;
+        padding: 0 1.25rem;
+    }
 }

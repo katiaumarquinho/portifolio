@@ -23,7 +23,7 @@
 
 .planet{
     bottom: calc(100vw * var(--city-second-height) / var(--city-original-width));
-    transform: scale(calc(1 - var(--scroll-movement) / 3000));
+    transform: scale(calc(1 - var(--scroll-movement-earth) / 3000));
     transform-origin: bottom left;
     z-index: 2;
 }
@@ -33,6 +33,7 @@
     width: 50vw;
     max-width: 900px;
     min-width: 350px;
+    z-index: 2;
 }
 
 .moon {
@@ -41,6 +42,7 @@
     bottom: 100%;
     left: 5rem;
     z-index: 1;
+    transform: translate(calc(var(--scroll-movement-moon) / 4), calc(var(--scroll-movement-moon) / 6));
 }
 
 
@@ -61,7 +63,7 @@
 
 .nebulatop > img {
     width: 50vw;
-    min-width: 400px;
+    min-width: 350px;
 }
  
 .spaceship-wrapper {
@@ -84,7 +86,7 @@
 
 .horizontal {
     position: absolute;
-    bottom: calc(100vw * var(--city-original-height) / var(--city-original-width) + 10vh);
+    bottom: calc(100vw * var(--city-original-height) / var(--city-original-width) + 5vh);
     z-index: 3;
     left: 0;
 }

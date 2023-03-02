@@ -27,7 +27,7 @@ export function App() {
  
 
       <main {...{className: styles.wrapper}}>
-        <div className={styles.hero} {...bind} style={{'--mouse-movement-x': x + 'px', '--mouse-movement-y': y + 'px', '--scroll-movement': scrollPosition}}>
+        <div className={styles.hero} {...bind} style={{'--mouse-movement-x': x + 'px', '--mouse-movement-y': y + 'px', '--scroll-movement-moon': scrollPosition + 'px', '--scroll-movement-earth': scrollPosition}}>
           <figure className={styles.nebulatop}>
             <img src={nebulatop} alt='nebula'/>
           </figure>
