@@ -1,92 +1,103 @@
 .wrapper {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .hero {
-    --city-second-height: 66;
-    --city-original-width: 320;
-    --city-original-height: 90;
-    --city-height: (100vw * var(--city-original-height) / var(--city-original-width));
-    height: calc(100vh + var(--city-height));
-    position: relative;
-    background-image: url('./assets/stars.svg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: calc(var(--mouse-movement-x) / 15) calc(var(--mouse-movement-y) / 15);
-    transition: all 0.05s ease;
+  --city-second-height: 66;
+  --city-original-width: 320;
+  --city-original-height: 90;
+  --city-height: (
+    100vw * var(--city-original-height) / var(--city-original-width)
+  );
+  height: calc(100vh + var(--city-height));
+  position: relative;
+  background-image: url("./assets/stars.svg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: calc(var(--mouse-movement-x) / 15)
+    calc(var(--mouse-movement-y) / 15);
+  transition: all 0.05s ease;
 }
 
-.nebulatop, .nebulabottom, .planet, .moon, .spaceships {
-    position: absolute;
-
+.nebulatop,
+.nebulabottom,
+.planet,
+.moon,
+.spaceships {
+  position: absolute;
 }
 
-.planet{
-    bottom: calc(100vw * var(--city-second-height) / var(--city-original-width));
-    transform: scale(calc(1 - var(--scroll-movement-earth) / 3000));
-    transform-origin: bottom left;
-    z-index: 2;
+.planet {
+  bottom: calc(100vw * var(--city-second-height) / var(--city-original-width));
+  transform: scale(calc(1 - var(--scroll-movement-earth) / 3000));
+  transform-origin: bottom left;
+  z-index: 2;
 }
 
 .earth {
-    position: relative;
-    width: 50vw;
-    max-width: 900px;
-    min-width: 350px;
-    z-index: 2;
+  position: relative;
+  width: 50vw;
+  max-width: 900px;
+  min-width: 350px;
+  z-index: 2;
 }
 
 .moon {
-    width: 10vw;
-    min-width: 100px;
-    bottom: 100%;
-    left: 5rem;
-    z-index: 1;
-    transform: translate(calc(var(--scroll-movement-moon) / 4), calc(var(--scroll-movement-moon) / 6));
+  width: 10vw;
+  min-width: 100px;
+  bottom: 100%;
+  left: 5rem;
+  z-index: 1;
+  transform: translate(
+      calc(var(--scroll-movement-moon) / 4),
+      calc(var(--scroll-movement-moon) / 6)
+    )
+    rotate(calc(var(--scroll-movement-rotate-moon) / -10));
 }
-
 
 .nebulabottom {
-    right: 0;
-    bottom: calc(100vw * var(--city-second-height) / var(--city-original-width));
-    z-index: 1;
+  right: 0;
+  bottom: calc(100vw * var(--city-second-height) / var(--city-original-width));
+  z-index: 1;
 }
 
-.nebulabottom > img{
-    width: 55vw;
-    min-width: 400px;
+.nebulabottom > img {
+  width: 55vw;
+  min-width: 400px;
 }
 
-.nebulatop{
-    top: 0;
+.nebulatop {
+  top: 0;
 }
 
 .nebulatop > img {
-    width: 50vw;
-    min-width: 350px;
+  width: 50vw;
+  min-width: 350px;
 }
- 
+
 .spaceship-wrapper {
-    right: 0;
-    top: 0;
+  right: 0;
+  top: 0;
 }
 
 .spaceShip {
-    position: absolute;
-    height: 105vh;
-    right: 0;
-    top: 0;
-    z-index: 3;
+  position: absolute;
+  height: 105vh;
+  right: 0;
+  top: 0;
+  z-index: 3;
 }
 
 .horizontalSpaceShip {
-    position: absolute;
-    width: 100vw;
+  position: absolute;
+  width: 100vw;
 }
 
 .horizontal {
-    position: absolute;
-    bottom: calc(100vw * var(--city-original-height) / var(--city-original-width) + 5vh);
-    z-index: 3;
-    left: 0;
+  position: absolute;
+  bottom: calc(
+    100vw * var(--city-original-height) / var(--city-original-width) + 5vh
+  );
+  z-index: 3;
+  left: 0;
 }
