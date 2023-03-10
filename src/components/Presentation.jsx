@@ -1,50 +1,10 @@
 import myPixelPhoto from "../assets/my-photo.svg";
-import myAlivePhoto from "../assets/alive-photo.jpg"
+import myAlivePhoto from "../assets/alive-photo.jpg";
 import styles from "./Presentation.module.css";
-import { useState, useCallback, useEffect } from "react";
+import useModal from "../useModal";
 
 export function Presentation() {
-  const [open, setOpen] = useState(false);
-  const getStyle = useCallback(() => {
-    return {
-      display: open ? "flex" : "none",
-      width: "100%",
-      height: "100%",
-      position: "fixed",
-      top: 0,
-      left: 0,
-      zIndex: 4,
-      backgroundColor: "rgb(6,0,26,0.8)",
-      alignItems: "center",
-      justifyContent: "center",
-    };
-  }, [open]);
-
-  useEffect(() => {
-    const zoomInAnimation = `@keyframes zoomIn {
-      from { transform: scale(0.1); }
-      to { transform: scale(1); }
-    }`;
-    const zoomOutAnimation = `@keyframes zoomOut {
-      from { transform: scale(1); }
-      to { transform: scale(0.1); }
-    }`;
-
-    const styles = document.createElement("style");
-    styles.appendChild(
-      document.createTextNode(zoomInAnimation + zoomOutAnimation)
-    );
-    document.head.appendChild(styles);
-
-    return () => {
-      document.head.removeChild(styles);
-    };
-  }, []);
-
-  const biggerPhotoStyle = {
-    width: "40vw",
-    animation: open ? "zoomIn 0.5s forwards" : "zoomOut 0.5s forwards",
-  };
+  const { setOpen, getStyle, biggerPhotoStyle } = useModal();
 
   return (
     <article>
@@ -55,7 +15,7 @@ export function Presentation() {
         }}
       >
         <div className={styles.containerBiggerPhoto}>
-          <img src={myPixelPhoto} style={biggerPhotoStyle} />
+          <img src={myPixelPhoto} style={{ ...biggerPhotoStyle }} />
         </div>
       </div>
       <div className={styles.container}>
