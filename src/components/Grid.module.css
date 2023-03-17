@@ -1,10 +1,11 @@
 .gridWrapper {
-  background-color: transparent;
   background-image: url("../assets/stars.svg");
+  background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  min-height: 100vh;
+  display: flex;
+  align-items: center;
   position: relative;
+  min-height: 100vh;
 }
 
 .gridContainer {
@@ -59,7 +60,10 @@
   align-items: center;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
+  .gridWrapper {
+    min-height: 100vh;
+  }
   .span1 {
     grid-column: 1;
     grid-row-end: auto;

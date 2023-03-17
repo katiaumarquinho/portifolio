@@ -40,7 +40,9 @@ const useModal = () => {
   }, []);
 
   const biggerPhotoStyle = {
-    height: "50vh",
+    height: "auto",
+    width: "50vw",
+    maxWidth: "50%",
     animation: open ? "zoomIn 0.5s forwards" : "zoomOut 0.5s forwards",
   };
 

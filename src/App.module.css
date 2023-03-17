@@ -106,4 +106,10 @@
   .hero {
     background-position: initial;
   }
+  .spaceShip {
+    display: none;
+  }
+  .horizontalSpaceShip {
+    display: none;
+  }
 }

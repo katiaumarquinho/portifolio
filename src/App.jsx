@@ -15,10 +15,8 @@ import useScrollPosition from "./useScrollPosition";
 
 export function App() {
   const [x, y, bind] = useMousePosition();
-  console.log(x, y);
 
   const scrollPosition = useScrollPosition();
-  console.log(scrollPosition);
 
   return (
     <div>
@@ -65,7 +63,6 @@ export function App() {
 
         <Presentation />
         <Grid />
-
       </main>
     </div>
   );

@@ -7,6 +7,7 @@ article {
   min-height: 100vh;
   width: 100vw;
   background-color: #160b40;
+  max-height: 1000px;
 }
 
 .container {
@@ -68,7 +69,10 @@ article {
   margin: 0 5rem;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
+  article {
+    max-height: none;
+  }
   .container {
     gap: 2.5rem;
     flex-direction: column;

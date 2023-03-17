@@ -1,36 +1,36 @@
 import styles from "./Grid.module.css";
 import cityDevil from "../assets-grid/city-devil.svg";
 import cityFront from "../assets-grid/city-front-side.svg";
-import busStop from "../assets-grid/bus-stop.gif";
+import busStop from "../assets-grid/bus-stop.svg";
 import goldenRatio from "../assets-grid/golden-ratio.svg";
-import space from "../assets-grid/space.gif";
+import space from "../assets-grid/space.svg";
 import bedRoom from "../assets-grid/bedroom.svg";
 import kitchenTop from "../assets-grid/kitchen-top-down.svg";
 import abstract from "../assets-grid/abstract.svg";
 import geometricSpace from "../assets-grid/geometric-space.svg";
 import squirtle from "../assets-grid/squirtle.svg";
 import karby from "../assets-grid/karby.svg";
-import vaporwave from "../assets-grid/vaporwave.gif";
+import vaporwave from "../assets-grid/vaporwave.svg";
 import geralt from "../assets-grid/geralt.svg";
 import cinnamonDevil from "../assets-grid/cinnamon-devil.svg";
 
 import { Card } from "./Card";
 
 const images = [
-  { img: cityDevil, name: "span1" },
-  { img: cityFront, name: "span2" },
-  { img: busStop, name: "span3" },
-  { img: goldenRatio, name: "span2" },
-  { img: space, name: "span2" },
-  { img: bedRoom, name: "span4" },
-  { img: kitchenTop, name: "span4" },
-  { img: abstract, name: "span5" },
-  { img: geometricSpace, name: "span5" },
-  { img: squirtle, name: "span4" },
-  { img: karby, name: "span4" },
-  { img: vaporwave, name: "span4" },
-  { img: geralt, name: "span4" },
-  { img: cinnamonDevil, name: "span4" },
+  { assetSrc: cityDevil, gridPosition: "span1" },
+  { assetSrc: cityFront, gridPosition: "span2" },
+  { assetSrc: busStop, gridPosition: "span3" },
+  { assetSrc: goldenRatio, gridPosition: "span2" },
+  { assetSrc: space, gridPosition: "span2" },
+  { assetSrc: bedRoom, gridPosition: "span4" },
+  { assetSrc: kitchenTop, gridPosition: "span4" },
+  { assetSrc: abstract, gridPosition: "span5" },
+  { assetSrc: geometricSpace, gridPosition: "span5" },
+  { assetSrc: squirtle, gridPosition: "span4" },
+  { assetSrc: karby, gridPosition: "span4" },
+  { assetSrc: vaporwave, gridPosition: "span4" },
+  { assetSrc: geralt, gridPosition: "span4" },
+  { assetSrc: cinnamonDevil, gridPosition: "span4" },
 ];
 
 export function Grid() {
@@ -38,7 +38,7 @@ export function Grid() {
     <nav className={styles.gridWrapper}>
       <div className={styles.gridContainer}>
         {images.map((image) => {
-          return <Card src={image.img} style={image.name} />;
+          return <Card src={image.assetSrc} style={image.gridPosition} />;
         })}
       </div>
     </nav>
