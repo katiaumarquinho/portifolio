@@ -1,5 +1,5 @@
 .contactWrapper {
-  height: 25vh;
+  min-height: 15vh;
   background-color: #160b40;
   display: flex;
   align-items: center;
@@ -11,38 +11,25 @@
 .contactContent {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: 6vw 44vw;
+  grid-template-columns: 70vw;
 
   font-family: "Chakra Petch", sans-serif;
   font-size: 1rem;
   line-height: 1.6rem;
 
-  diplay: flex;
   align-items: flex-start;
+
+  margin: 1rem 0;
+}
+
+.socialMidia {
+  grid-row-start: 2;
 }
 
 .contactWrapper a {
-  text-decoration: none;
-
-  display: flex;
-  align-items: center;
-
   color: #eacbf2;
-}
-
-.contactWrapper a > span {
-  opacity: 0;
-  transition: margin 0.2s;
-  transition-timing-function: ease;
 }
 
 .contactWrapper a:hover {
   color: #aa16db;
-}
-
-.contactWrapper a:hover span {
-  opacity: 1;
-  display: block;
-  color: #aa16db;
-  margin: 0 0 0 0.2rem;
 }
