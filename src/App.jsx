@@ -5,6 +5,7 @@ import nebulabottom from "./assets/nebula-bottom.svg";
 import nebulatop from "./assets/nebula-top.svg";
 import planet from "./assets/planet.svg";
 import spaceShip from "./assets/spaceship.gif";
+import { Contact } from "./components/Contact";
 import { Divisor } from "./components/Divisor";
 import { Grid } from "./components/Grid";
 import { Logo } from "./components/Logo";
@@ -63,6 +64,7 @@ export function App() {
 
         <Presentation />
         <Grid />
+        <Contact />
       </main>
     </div>
   );
