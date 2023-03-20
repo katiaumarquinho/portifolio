@@ -17,7 +17,7 @@ export function Contact() {
             <TwitterLogo size={24} weight="fill" />
             <span>Twitter</span>
           </a>
-          <a href="https://www.instagram.com/marquim_relampago/">
+          <a href="https://www.instagram.com/katiaumarquinho/">
             <InstagramLogo size={24} weight="fill" />
             <span>Instagram</span>
           </a>
