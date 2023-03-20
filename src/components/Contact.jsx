@@ -13,27 +13,30 @@ export function Contact() {
     <footer className={styles.contactWrapper}>
       <div className={styles.contactContent}>
         <div>
-          <a href="https://twitter.com/bromiosdiox">
+          <a href="https://twitter.com/bromiosdiox" target="_blank">
             <TwitterLogo size={24} weight="fill" />
             <span>Twitter</span>
           </a>
-          <a href="https://www.instagram.com/katiaumarquinho/">
+          <a href="https://www.instagram.com/katiaumarquinho/" target="_blank">
             <InstagramLogo size={24} weight="fill" />
             <span>Instagram</span>
           </a>
-          <a href="https://github.com/katiaumarquinho">
+          <a href="https://github.com/katiaumarquinho" target="_blank">
             <GithubLogo size={24} weight="fill" />
             <span>GitHub</span>
           </a>
-          <a href="https://www.linkedin.com/in/marcos-mesquita-bb3b88231/">
+          <a
+            href="https://www.linkedin.com/in/marcos-mesquita-bb3b88231/"
+            target="_blank"
+          >
             <LinkedinLogo size={24} weight="fill" />
             <span>Linkedin</span>
           </a>
-          <a href="mailto:marcosmesquita80@gmail.com">
+          <a href="mailto:marcosmesquita80@gmail.com" target="_blank">
             <Envelope size={24} weight="fill" />
             <span>E-mail</span>
           </a>
-          <a href="https://t.me/katiaumarquinho">
+          <a href="https://t.me/katiaumarquinho" target="_blank">
             <TelegramLogo size={24} weight="fill" />
             <span>Telegram</span>
           </a>
