@@ -9,3 +9,25 @@ body {
   background-color: #06001a;
   overflow-x: hidden;
 }
+
+.starsParallax::before {
+  content: "";
+  background-image: url("./assets/stars.svg");
+  width: 100%;
+  height: 100%;
+  bottom: 100%;
+  left: 0;
+  position: absolute;
+  background-size: cover;
+}
+
+.starsParallax::after {
+  content: "";
+  background-image: url("./assets/stars.svg");
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  left: 0;
+  position: absolute;
+  background-size: cover;
+}

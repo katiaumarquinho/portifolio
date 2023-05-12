@@ -11,33 +11,24 @@
   );
   height: calc(100vh + var(--city-height));
   position: relative;
-  background-image: url("./assets/stars.svg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: calc(var(--mouse-movement-x) / 15)
-    calc(var(--mouse-movement-y) / 15);
-  transition: all 0.05s ease;
 }
 
 .nebulatop,
 .nebulabottom,
 .planet,
-.moon,
 .spaceships {
   position: absolute;
 }
 
 .planet {
   bottom: calc(100vw * var(--city-second-height) / var(--city-original-width));
-  transform: scale(calc(1 - var(--scroll-movement-earth) / 3000));
-  transform-origin: bottom left;
   z-index: 2;
 }
 
 .earth {
   position: relative;
   width: 50vw;
-  max-width: 900px;
+  max-width: 2000px;
   min-width: 350px;
   z-index: 2;
 }
@@ -45,14 +36,7 @@
 .moon {
   width: 10vw;
   min-width: 100px;
-  bottom: 100%;
-  left: 5rem;
   z-index: 1;
-  transform: translate(
-      calc(var(--scroll-movement-moon) / 4),
-      calc(var(--scroll-movement-moon) / 6)
-    )
-    rotate(calc(var(--scroll-movement-rotate-moon) / -10));
 }
 
 .nebulabottom {
@@ -100,6 +84,12 @@
   );
   z-index: 3;
   left: 0;
+}
+
+.parallax {
+  height: 100%;
+  width: 100%;
+  background-repeat: repeat;
 }
 
 @media screen and (max-width: 992px) {
