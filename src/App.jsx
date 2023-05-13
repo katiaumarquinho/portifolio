@@ -22,7 +22,7 @@ export function App() {
           <ParallaxBanner
             layers={[
               {
-                image: "/src/assets/stars.svg",
+                image: stars,
                 speed: -200,
                 expanded: false,
                 className: "starsParallax",
