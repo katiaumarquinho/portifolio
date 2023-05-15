@@ -93,9 +93,6 @@
 }
 
 @media screen and (max-width: 992px) {
-  .hero {
-    background-position: initial;
-  }
   .spaceShip {
     display: none;
   }

@@ -1,7 +1,4 @@
 .gridWrapper {
-  background-image: url("../assets/stars.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   align-items: center;
   position: relative;
@@ -58,6 +55,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.parallax {
+  height: 100%;
+  width: 100%;
+  background-repeat: repeat;
 }
 
 @media screen and (max-width: 1024px) {

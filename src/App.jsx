@@ -23,7 +23,7 @@ export function App() {
             layers={[
               {
                 image: stars,
-                speed: -200,
+                speed: -150,
                 expanded: false,
                 className: "starsParallax",
               },

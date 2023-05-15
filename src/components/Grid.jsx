@@ -13,8 +13,10 @@ import karby from "../assets-grid/karby.svg";
 import vaporwave from "../assets-grid/vaporwave.svg";
 import geralt from "../assets-grid/geralt.svg";
 import cinnamonDevil from "../assets-grid/cinnamon-devil.svg";
+import stars from "../assets/stars.svg";
 
 import { Card } from "./Card";
+import { ParallaxBanner } from "react-scroll-parallax";
 
 const images = [
   { assetSrc: cityDevil, gridPosition: "span1" },
@@ -35,12 +37,24 @@ const images = [
 
 export function Grid() {
   return (
-    <nav className={styles.gridWrapper}>
-      <div className={styles.gridContainer}>
-        {images.map((image) => {
-          return <Card src={image.assetSrc} style={image.gridPosition} />;
-        })}
-      </div>
-    </nav>
+    <ParallaxBanner
+      layers={[
+        {
+          image: stars,
+          speed: -150,
+          expanded: false,
+          className: "starsParallax",
+        },
+      ]}
+      className={styles.parallax}
+    >
+      <nav className={styles.gridWrapper}>
+        <div className={styles.gridContainer}>
+          {images.map((image) => {
+            return <Card src={image.assetSrc} style={image.gridPosition} />;
+          })}
+        </div>
+      </nav>
+    </ParallaxBanner>
   );
 }
