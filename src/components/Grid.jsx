@@ -41,7 +41,7 @@ export function Grid() {
       layers={[
         {
           image: stars,
-          speed: -150,
+          speed: -100,
           expanded: false,
           className: "starsParallax",
         },
